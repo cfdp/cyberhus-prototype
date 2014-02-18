@@ -1,0 +1,97 @@
+$blue: #3b5998;   /*  yellow - #f8933c  */
+
+body{
+  color: #232323;
+  font-size: 12px;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4em;
+}
+
+p {
+  margin-bottom: 3px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 40px 0 10px 0;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.light-text {
+  color: #888888;
+}
+
+#wrapper {
+  max-width: 980px;
+  margin: auto;
+  padding: 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  color: #ffffff;
+  background: $blue;
+}
+
+.author {
+  font-size: 16px;
+  margin: 10px 0 3px 0;
+}
+
+.date {
+  float: right;
+}
+
+#interaction {
+  margin: 20px 0 60px 0;
+  span {
+    margin: 5px 10px 0 0;
+  }
+}
+
+.right {
+  float: right;
+}
+
+.kommentar {
+  margin-bottom: 20px;
+}
+
+.komm_author {
+  color: $blue;
+  font-weight: bolder;
+}
+
+form {
+  * {
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #aaaaaa;
+    padding-left: 3px;
+  }
+  
+  textarea {
+    width: 350px;
+    height: 120px;
+    resize: none;
+    border: 1px solid #aaaaaa;
+    display: block;
+  }
+}
