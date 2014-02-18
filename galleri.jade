@@ -1,28 +1,29 @@
 #wrapper
-	a(href="") Fortællinger > Livsfortællinger
-	p.author Emil den vilde
-	p Dreng, 16 år
-	span.date 20. okt 2013
-	h1 Livet er lort!
-	p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus.
-	| Fusce imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh,
-	| eu fringilla lectus. Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus.
-	| Sed a libero dapibus, vehicula tortor ac, porta ipsum. Maecenas venenatis diam felis, sit amet
-	| dictum felis suscipit eget.
-	br
-	p Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-	| Aenean lobortis erat sit amet bibendum porta. Nunc congue orci vitae posuere vulputate.
-	| Vestibulum ullamcorper ipsum vel viverra facilisis. Integer molestie mauris sed enim dignissim,
-	| convallis posuere leo blandit. Phasellus id sem tincidunt, ornare mauris at, hendrerit justo.
-	| Donec ultricies, tortor ac porta tempus, tortor quam aliquet velit, et porttitor nisl dolor
-	| fringilla magna.
+	a(href="") Kunstgalleri
+
+	article
+		#galleri-img
+			img(src="img/kitten.jpg" alt="kitten" width="100%")
+
+		p.author Emil den vilde
+		p Dreng, 16 år
+			time 20. okt 2013
+
+		h1 Livet er lort!
+		p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus.
+		| Fusce imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh,
+		| eu fringilla lectus. Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus.
+		| Sed a libero dapibus, vehicula tortor ac, porta ipsum. Maecenas venenatis diam felis, sit amet
+		| dictum felis suscipit eget.
+
 	section#interaction
 		a.btn(href="#komm") + Tilføj kommentar
 		a.btn.right(href="") Like
 		span.light-text.right 4 synes godt om
+
 	.kommentar
 			p
-				span.komm_author Hans den glade
+				span.komm-author Hans den glade 
 				|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
 				|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
 				|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
@@ -34,7 +35,7 @@
 			span.light-text  - 2 synes godt om
 	.kommentar
 			p
-				span.komm_author Hans den glade
+				span.komm-author Hans den glade 
 				|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
 				|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
 				|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
@@ -48,7 +49,7 @@
 			span.light-text  - 2 synes godt om
 	.kommentar
 			p
-				span.komm_author Hans den glade
+				span.komm-author Hans den glade 
 				|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
 				|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
 				|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
@@ -60,7 +61,7 @@
 			span.light-text  - 2 synes godt om
 	.kommentar
 			p
-				span.komm_author Hans den glade
+				span.komm-author Hans den glade 
 				|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
 				|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
 				|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
@@ -72,7 +73,7 @@
 			span.light-text  - 2 synes godt om
 	.kommentar
 			p
-				span.komm_author Hans den glade
+				span.komm-author Hans den glade 
 				|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
 				|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
 				|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
@@ -84,7 +85,7 @@
 			span.light-text  - 2 synes godt om
 	.kommentar
 			p
-				span.komm_author Hans den glade
+				span.komm-author Hans den glade 
 				|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
 				|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
 				|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
@@ -94,8 +95,10 @@
 			span.light-text  - 
 			a(href="") Cyberlike
 			span.light-text  - 2 synes godt om
-	h2#komm Tilføj kommentar
-	form
-		input(type="text" placeholder="navn")
-		textarea(placeholder="kommentar")
-		input.btn(type="sumbmit" value="Gem")
+
+	section#komm-form
+		h2 Tilføj kommentar
+		form
+			input(type="text" placeholder="navn")
+			textarea(placeholder="kommentar")
+			input.btn(type="submit" value="Gem")
