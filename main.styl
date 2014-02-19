@@ -5,67 +5,142 @@ body
   font-size 12px
   font-family "Helvetica" sans-serif
   line-height 1.4em
+
 h1
   font-size 20px
   margin 20px 0 10px 0
+
 h2
   font-size 16px
   margin 20px 0 10px 0
+
 a
   color blue
   text-decoration none
   &:hover
     text-decoration underline
+
 .light-text
   color #888888
+
 #wrapper
   max-width  980px
   margin  auto
   padding  10px
+
 .inline
   margin-right: 10px
+
 .btn
   padding 5px 10px
   color #ffffff
   background blue
+
 .author
   font-size 14px
   margin-top 10px
+
 .author-info
   margin-top -10px
+
 time
   font-size 12px
   float right
+
 #interaction
   margin 20px 0 80px 0
   span
     margin 5px 10px 0 0
+
 .left
   float left
+
 .right
   float right
+
 .kommentar
   margin-bottom 20px
+
 .komm-author
   color blue
   font-weight bolder
+
 #galleri-img
   text-align center
+
 img
   margin auto
   margin-top 10px
+
 form
   *
     border-radius 3px
     margin-bottom 10px
+
   input
     width 120px
     height 30px
     border 1px solid #aaaaaa
     padding-left 3px
+
   textarea
     width 350px
     height 120px
     resize none
     border 1px solid #aaaaaa
     display block
+
+article.post
+  padding 5px 10px
+  margin-top 10px
+  background #efefef
+
+  p
+    margin 0
+  .author-info
+    margin-left 20px
+    color #888888
+
+  .arrow
+    width 10px
+    height 10px
+    float left
+    margin-top 11px
+    color black
+    font-size 14px
+    font-weight bold
+    background url("img/arrow.png") no-repeat
+    background-size contain
+    &:hover
+      text-decoration none
+      cursor pointer
+
+  .rotate
+    -webkit-transform rotate(90deg)
+    -moz-transform rotate(90deg)
+    -ms-transform rotate(90deg)
+    -o-transform rotate(90deg)
+    transform rotate(90deg)
+  h2
+    font-size 14px
+    margin 0 0 0 20px
+    font-weight normal
+
+  .post-komm
+    float right
+    margin -28px 45% 0 0
+    padding 3px 12px
+    border 1px solid black
+
+  .post-date
+    float right
+    margin -24px 5% 0 0
+
+  .toggle-text
+    display none
+    margin 10px 10% 0 20px
+
+    p
+      margin-bottom 5px
+    a
+      margin-bottom 5px
