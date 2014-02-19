@@ -7,22 +7,24 @@
   font-family: 'lucida grande'
   src: url(fonts/LucidaGrande.ttc)
 
+@font-face 
+  font-family: 'vegur'
+  src: url(fonts/Vegur-Regular.otf)
 
 blue = #0b5a7c
 
 body
   color #232323
-  font-size 12px
-  font-family "lucida grande" "Helvetica" sans-serif
-  line-height 1.4em
+  font-size 14px
+  font-family lucida grande, helvetica, arial, sans-serif
+  line-height 1.3em
   background #f1f1f1
 
 h1
   font-size 24px
   margin 20px 0 10px 0
-
   font-weight 400
-  font-family myriad pro
+  font-family vegur, myriad pro, Helvetica, arial, sans-serif
   line-height 1em
 
 h2
@@ -63,6 +65,10 @@ a
   padding 5px 10px
   color #ffffff
   background blue
+  font-size 14px
+  &:hover 
+    background lighten(blue, 10%)
+    text-decoration none
 
 .author
   font-size 16px
@@ -70,24 +76,17 @@ a
   font-family myriad pro
   
 .author-info
-  margin-top -10px
-  font-size 13px
+  margin-top -15px
+  font-size 14px
   font-family myriad pro
   color #888888
 
 #overview-opret
   margin-left 75px
 
-.author
-  margin-top 10px
-
-.author-info
-  margin-top -10px
-  color #888888
-
 time
   float right
-  font-size: 13px;
+  font-size: 14px;
   color #888888
   
 article
@@ -132,6 +131,7 @@ form
     height 30px
     border 1px solid #aaaaaa
     padding-left 3px
+
 
   textarea
     width 100%
