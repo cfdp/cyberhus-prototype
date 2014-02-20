@@ -11,20 +11,25 @@
   font-family: 'vegur'
   src: url(fonts/Vegur-Regular.otf)
 
+// @font-face 
+//   font-family: 'Avenir Next'
+//   src: url(fonts/Avenir Next.ttc)
+
+
 blue = #0b5a7c
 
 body
   color #232323
   font-size 14px
-  font-family lucida grande, helvetica, arial, sans-serif
-  line-height 1.3em
+  font-family Avenir Next, lucida grande, helvetica, arial, sans-serif
+  line-height 1.6em
   background #f1f1f1
 
 h1
   font-size 24px
   margin 20px 0 10px 0
-  font-weight 400
-  font-family vegur, myriad pro, Helvetica, arial, sans-serif
+  font-weight 500
+  font-family avenir_next, vegur, myriad pro, Helvetica, arial, sans-serif
   line-height 1em
 
 h2
@@ -37,6 +42,9 @@ a
 
   &:hover
     text-decoration underline
+
+nav
+  font-size 12px
 
 .overview-summary
   margin-left 75px
@@ -73,12 +81,10 @@ a
 .author
   font-size 16px
   margin-top 10px
-  font-family myriad pro
   
 .author-info
   margin-top -15px
   font-size 14px
-  font-family myriad pro
   color #888888
 
 #overview-opret
@@ -104,6 +110,9 @@ article
 
 .right
   float right
+
+#kommentarer
+  line-height 1.4em
 
 .kommentar
   margin-bottom 20px
@@ -150,9 +159,9 @@ article.post
     margin 0
 
   h2
-    font-size 14px
+    font-size 15px
     margin 0 0 0 20px
-    font-weight normal
+    font-weight 500
     margin-left 65px
     
   .author-info
@@ -163,7 +172,7 @@ article.post
     width 10px
     height 10px
     float left
-    margin 11px 0 0 20px
+    margin 17px 0 0 20px
     color black
     font-size 14px
     font-weight bold
@@ -182,13 +191,13 @@ article.post
 
   .post-komm
     float right
-    margin -28px 45% 0 0
+    margin -37px 175px 0 0
     padding 3px 12px
     border 1px solid black
 
   .post-date
     float right
-    margin -24px 5% 0 0
+    margin -33px 5% 0 0
 
   .toggle-text
     display none
