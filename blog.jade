@@ -5,23 +5,22 @@ html
 		script(src="js/jquery.min.js")
 	body
 		header
-			.logo
-				a(href="index")
-					img(src="img/logo.png")
 			nav
-				ul
-					li
-						a(href="") Chat
-					li
-						a(href="letter") Brevkasse
-					li
-						a(href="livsfortaellinger") Debat
-					li
-						a(href="livsfortaellinger_overview") Fortællinger
-					li
-						a(href="galleri") Kunstgalleri
-					li
-						a(href="blog") Blogs
+				a(href="index").logo
+				#menu
+					ul
+						li
+							a(href="secret") Chat
+						li
+							a(href="letter") Brevkasse
+						li
+							a(href="livsfortaellinger") Debat
+						li
+							a(href="livsfortaellinger_overview") Fortællinger
+						li
+							a(href="galleri") Kunstgalleri
+						li
+							a(href="blog") Blogs
 		#wrapper
 			section#sidebar
 			#content-wrapper
@@ -149,9 +148,9 @@ html
 							a(href="") Tilføj kommentar
 							span.light-text  - 
 							a(href="") Cyberlike
-							span.light-text  - 2 synes
+							span.light-text  - 2 synes godt om
 							p.komm-komm
-								span.nr-komm 3
+								a.komm-arrow
 								span.se-komm Kommentarer
 
 						.inline-komm			
@@ -172,9 +171,9 @@ html
 									a(href="") Tilføj kommentar
 									span.light-text  - 
 									a(href="") Cyberlike
-									span.light-text  - 2 synes
+									span.light-text  - 2 synes godt om
 									p.komm-komm
-										span.nr-komm 1
+										a.komm-arrow
 										span.se-komm Kommentarer
 								.inline-komm			
 									.kommentar
@@ -185,9 +184,9 @@ html
 											a(href="") Tilføj kommentar
 											span.light-text  - 
 											a(href="") Cyberlike
-											span.light-text  - 2 synes
+											span.light-text  - 2 synes godt om
 											p.komm-komm
-												span.nr-komm 1
+												a.komm-arrow
 												span.se-komm Kommentarer
 										.inline-komm			
 											.kommentar
@@ -229,9 +228,9 @@ html
 							a(href="") Tilføj kommentar
 							span.light-text  - 
 							a(href="") Cyberlike
-							span.light-text  - 2 synes
+							span.light-text  - 2 synes godt om
 							p.komm-komm
-								span.nr-komm 3
+								a.komm-arrow
 								span.se-komm Kommentarer
 
 						.inline-komm			
@@ -252,9 +251,9 @@ html
 									a(href="") Tilføj kommentar
 									span.light-text  - 
 									a(href="") Cyberlike
-									span.light-text  - 2 synes
+									span.light-text  - 2 synes godt om
 									p.komm-komm
-										span.nr-komm 1
+										a.komm-arrow
 										span.se-komm Kommentarer
 								.inline-komm			
 									.kommentar
@@ -265,9 +264,9 @@ html
 											a(href="") Tilføj kommentar
 											span.light-text  - 
 											a(href="") Cyberlike
-											span.light-text  - 2 synes
+											span.light-text  - 2 synes godt om
 											p.komm-komm
-												span.nr-komm 1
+												a.komm-arrow
 												span.se-komm Kommentarer
 										.inline-komm			
 											.kommentar

@@ -19,14 +19,13 @@
 
 @import url("reset.css")
 
-text = #222222
-bg = #f6f6f6f6
-header_bg = #a98168
-nav_bar = lighten(header_bg, 40%)
-links = #657b90
+text = #222
+bg = #ffffff
+header_bg = #cab2a1
+nav_hover = #b78362
+links = #005680
 post_info = #888
-wrapper_bg = #f6f6f6f6
-btn_text = #eeeeee
+btn_text = #ffffff
 btn_bg = #f1975c
 btn_hover = darken(btn_bg, 20%)
 post_bg = #eeeeee
@@ -47,7 +46,6 @@ h1
   line-height 1.3em
 
 h2
-  font-size 16px
   margin 20px 0 10px 0
 
 a
@@ -56,46 +54,44 @@ a
 
   &:hover
     cursor pointer
+    text-decoration underline
 
 header
-  width 100%
-  height 120px
+  margin auto
   background header_bg
-
+  border-bottom 2px solid nav_hover
   .logo
-    width 960px
-    margin auto
+    margin-top 10px
+    width 164px
+    height 50px
+    background url("img/logo.png")
+    background-size cover
+    display inline-block
     img
       max-width 200px
-      width 100%
-      margin-top 20px
 
-nav
-  height 40px
-  background nav_bar
-  border-bottom 1px solid header_bg
-  ul
-    max-width 960px
-    margin  auto
-    li
-      margin-top 9px
-      float left
-      &:first-child
-        border 0
-      a
-        color text
-        padding 11px 32px
-        border-left 1px solid #b5a9a0
-        &:hover
-          background header_bg
-
-
-.breadcrumb
-  font-size 12px
+  nav
+    width 960px
+    margin auto
+  #menu
+    float right
+    ul
+      li
+        margin-top 22px
+        float left
+        &:first-child
+          border 0
+        a
+          color #4a4848
+          padding 24px 20px
+          //border-left 1px solid lighten(nav_hover, 25%)
+          &:hover
+            background nav_hover
+            text-decoration none
 
 #wrapper
   max-width 960px
-  margin  auto
+  margin auto
 
 #content-wrapper
   max-width 610px
@@ -106,7 +102,7 @@ nav
   height 800px
   float right
   margin-top 30px
-  background nav_bar 
+  background header_bg
 
 .overview-summary
   margin-left 75px
@@ -129,19 +125,15 @@ nav
   padding 5px 10px
   color btn_text
   background btn_bg
-  font-size 14px
   &:hover 
     background btn_hover
     text-decoration none
 
 .author
-  font-size 16px
   margin-top 10px
-  font-family myriad pro
   
 .author-info
   margin-top 1px
-  font-size 14px
   color post_info
 
 #overview-opret
@@ -149,13 +141,13 @@ nav
 
 time
   float right
-  font-size: 14px;
   color post_info
   
 article
   h2
     font-weight 400
-    font-size 14px
+  p
+    margin-bottom 1em
 
 #interaction
   margin 20px 0 80px 0
@@ -174,22 +166,23 @@ article
 
 .inline-komm
   margin-left 10px
-  display none
   .kommentar
-    border-left 1px solid lighten(links, 70%)
+    border-left 1px solid #cdcdcd
     padding 8px 0 8px 10px
 
 .komm-author
-  font-weight 700
+  font-weight 500
 
 .komm-komm
   margin-top 5px
 
-.nr-komm
-  color links
-  border 1px solid links
-  padding 0 10px
-  margin-right 5px
+.komm-arrow
+  width 10px
+  height 6px
+  background url("img/arrow_komm.png")
+  background-size cover
+  display inline-block
+  margin 0 6px
 
 .se-komm
   cursor pointer
@@ -234,7 +227,6 @@ article.post
     margin 0
 
   h2
-    font-size 14px
     margin 0 0 0 20px
     font-weight normal
     margin-left 65px
@@ -249,7 +241,6 @@ article.post
     float left
     margin 18px 0 0 20px
     color black
-    font-size 14px
     font-weight bold
     background url("img/arrow.png") no-repeat
     background-size contain
