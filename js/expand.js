@@ -1,6 +1,10 @@
 $(document).ready(function(){
 	$(".arrow").click(function(){
 		$(this).toggleClass("rotate");
-		$(this).parent().children(".toggle-text").slideToggle("300");
+		$(this).siblings(".toggle-text").slideToggle("300");
+	});
+
+	$(".se-komm").click(function(){
+		$(this).parents("p").siblings(".inline-komm").slideToggle("300");
 	});
 });

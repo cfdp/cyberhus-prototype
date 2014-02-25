@@ -1,125 +1,135 @@
 !!! 5
 html
 	head
-		title Kunstgalleri
+		title Cyberhus
+		script(src="js/jquery.min.js")
 	body
-
 		header
 			.logo
-				img(src="img/logo.png")
-		.navbar
-
-
-		#wrapper
-			hr
+				a(href="index")
+					img(src="img/logo.png")
 			nav
-				a(href="index") Kunstgalleri > Min billeder
+				ul
+					li
+						a(href="") Chat
+					li
+						a(href="letter") Brevkasse
+					li
+						a(href="livsfortaellinger") Debat
+					li
+						a(href="livsfortaellinger_overview") Fortællinger
+					li
+						a(href="galleri") Kunstgalleri
+					li
+						a(href="blog") Blogs
+		#wrapper
+			section#sidebar
+			#content-wrapper
+				.breadcrumb
+					a(href="index") Kunstgalleri > Min billeder
 
-			article
-				#galleri-img
-					img(src="img/kitten.jpg" alt="kitten" width="100%")
+				article
+					#galleri-img
+						img(src="img/kitten.jpg" alt="kitten" width="100%")
 
-				p.author Emil den vilde
-				p.author-info Dreng, 16 år
-					time 20. okt 2013
+					p.author Emil den vilde
+					p.author-info Dreng, 16 år
+						time 20. okt 2013
 
-				h1 Mine billeder
-				p.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-					Aenean lobortis erat sit amet bibendum porta. Nunc congue orci vitae posuere vulputate.
-					Vestibulum ullamcorper ipsum vel viverra facilisis. Integer molestie mauris sed enim dignissim,
-					convallis posuere leo blandit. Phasellus id sem tincidunt, ornare mauris at, hendrerit justo.
-					Donec ultricies, tortor ac porta tempus, tortor quam aliquet velit, et porttitor nisl dolor
-					fringilla magna.
+					h1 Mine billeder
+					p.
+						Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+						Aenean lobortis erat sit amet bibendum porta. Nunc congue orci vitae posuere vulputate.
+						Vestibulum ullamcorper ipsum vel viverra facilisis. Integer molestie mauris sed enim dignissim,
+						convallis posuere leo blandit. Phasellus id sem tincidunt, ornare mauris at, hendrerit justo.
+						Donec ultricies, tortor ac porta tempus, tortor quam aliquet velit, et porttitor nisl dolor
+						fringilla magna.
 
-			section#interaction
-				a.btn.left(href="#komm-form") + Tilføj kommentar
-				a.btn.right(href="") Like
-				span.light-text.right 4 synes godt om
-			hr
+				section#interaction
+					a.btn.left(href="#komm-form") + Tilføj kommentar
+					a.btn.right(href="") Like
+					span.light-text.right 4 synes godt om
 
-			section#kommentarer
-				.kommentar
-						p
-							span.komm-author Hans den glade 
-							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
-							|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
-							|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
-							|vehicula tortor ac, porta ipsum. 
-							br
-							span.light-text 22. dec 2013 - 
-							a(href="") Tilføj kommentar
-							span.light-text  - 
-							a(href="") Cyberlike
-							span.light-text  - 2 synes godt om
-				.kommentar
-						p
-							span.komm-author Hans den glade 
-							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
-							br
-							span.light-text 22. dec 2013 - 
-							a(href="") Se kommentarer (3)
-							span.light-text  - 
-							a(href="") Tilføj kommentar
-							span.light-text  - 
-							a(href="") Cyberlike
-							span.light-text  - 2 synes godt om
-				.kommentar
-						p
-							span.komm-author Hans den glade 
-							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
-							|vehicula tortor ac, porta ipsum. Maecenas venenatis diam felis, sit amet dictum felis suscipit eget.
-							br
-							span.light-text 22. dec 2013 - 
-							a(href="") Tilføj kommentar
-							span.light-text  - 
-							a(href="") Cyberlike
-							span.light-text  - 2 synes godt om
-				.kommentar
-						p
-							span.komm-author Hans den glade 
-							|Lorem ipsum dolor sit amet.
-							br
-							span.light-text 22. dec 2013 - 
-							a(href="") Tilføj kommentar
-							span.light-text  - 
-							a(href="") Cyberlike
-							span.light-text  - 2 synes godt om
-				.kommentar
-						p
-							span.komm-author Hans den glade 
-							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
-							|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
-							|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
-							|vehicula tortor ac, porta ipsum. Maecenas venenatis diam felis, sit amet dictum felis suscipit eget.
-							|vehicula tortor ac, porta ipsum. Maecenas venenatis diam felis, sit amet dictum felis suscipit eget.
-							|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
-							br
-							span.light-text 22. dec 2013 - 
-							a(href="") Tilføj kommentar
-							span.light-text  - 
-							a(href="") Cyberlike
-							span.light-text  - 2 synes godt om
-				.kommentar
-						p
-							span.komm-author Hans den glade 
-							|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
-							|sit amet dictum felis suscipit eget.
-							br
-							span.light-text 22. dec 2013 - 
-							a(href="") Tilføj kommentar
-							span.light-text  - 
-							a(href="") Cyberlike
-							span.light-text  - 2 synes godt om
-			hr		
-			section#komm-form
-				h2 Tilføj kommentar
-				form
-					input(type="text" placeholder="navn")
-					textarea(placeholder="kommentar")
-					input.btn(type="submit" value="Gem")
-
-			hr
+				section#kommentarer
+					.kommentar
+							p
+								span.komm-author Hans den glade 
+								|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
+								|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
+								|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
+								|vehicula tortor ac, porta ipsum. 
+								br
+								span.light-text 22. dec 2013 - 
+								a(href="") Tilføj kommentar
+								span.light-text  - 
+								a(href="") Cyberlike
+								span.light-text  - 2 synes godt om
+					.kommentar
+							p
+								span.komm-author Hans den glade 
+								|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus.
+								br
+								span.light-text 22. dec 2013 - 
+								a(href="") Se kommentarer (3)
+								span.light-text  - 
+								a(href="") Tilføj kommentar
+								span.light-text  - 
+								a(href="") Cyberlike
+								span.light-text  - 2 synes godt om
+					.kommentar
+							p
+								span.komm-author Hans den glade 
+								|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
+								|vehicula tortor ac, porta ipsum. Maecenas venenatis diam felis, sit amet dictum felis suscipit eget.
+								br
+								span.light-text 22. dec 2013 - 
+								a(href="") Tilføj kommentar
+								span.light-text  - 
+								a(href="") Cyberlike
+								span.light-text  - 2 synes godt om
+					.kommentar
+							p
+								span.komm-author Hans den glade 
+								|Lorem ipsum dolor sit amet.
+								br
+								span.light-text 22. dec 2013 - 
+								a(href="") Tilføj kommentar
+								span.light-text  - 
+								a(href="") Cyberlike
+								span.light-text  - 2 synes godt om
+					.kommentar
+							p
+								span.komm-author Hans den glade 
+								|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
+								|imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
+								|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
+								|vehicula tortor ac, porta ipsum. Maecenas venenatis diam felis, sit amet dictum felis suscipit eget.
+								|vehicula tortor ac, porta ipsum. Maecenas venenatis diam felis, sit amet dictum felis suscipit eget.
+								|Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
+								br
+								span.light-text 22. dec 2013 - 
+								a(href="") Tilføj kommentar
+								span.light-text  - 
+								a(href="") Cyberlike
+								span.light-text  - 2 synes godt om
+					.kommentar
+							p
+								span.komm-author Hans den glade 
+								|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
+								|sit amet dictum felis suscipit eget.
+								br
+								span.light-text 22. dec 2013 - 
+								a(href="") Tilføj kommentar
+								span.light-text  - 
+								a(href="") Cyberlike
+								span.light-text  - 2 synes godt om
+		
+				section#komm-form
+					h2 Tilføj kommentar
+					form
+						input(type="text" placeholder="navn")
+						textarea(placeholder="kommentar")
+						input.btn(type="submit" value="Gem")
 
 		footer
 			img(src="img/footer_images.png" alt="by" width="100%")
