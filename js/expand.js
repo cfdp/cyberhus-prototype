@@ -5,9 +5,7 @@ $(document).ready(function(){
 	});
 
 	$(".komm-arrow").click(function(){
-		$(this).parents("p").siblings(".inline-komm").slideToggle("300");
-	});
-	$(".se-komm").click(function(){
+		$(this).toggleClass("rotate");
 		$(this).parents("p").siblings(".inline-komm").slideToggle("300");
 	});
 });
