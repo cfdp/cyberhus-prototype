@@ -23,7 +23,7 @@
 
 text = #222
 bg = #ffffff
-header_bg = #cab2a1
+header_bg = url("img/pattern.png")
 nav_hover = #b78362
 links = #1683B8
 post_info = #888
@@ -35,15 +35,15 @@ footer = #2B2526
 
 body
   color text
-  font-size 16px
+  font-size 15px
   font-family 'Nunito', sans-serif;
   font-weight 100
   line-height 1.6em
   background bg
 
 h1
-  font-size 24px
-  margin 20px 0 10px 0
+  font-size 22px
+  margin 20px 0 12px 0
   font-weight 300
   line-height 1.3em
 
@@ -111,7 +111,7 @@ header
 
 #sidebar
   width 280px
-  height 800px
+  height 500px
   float right
   margin-top 70px
   background #eee
@@ -149,8 +149,11 @@ header
   margin-top 1px
   color post_info
 
-#overview-opret
+.overview-btn
   margin-left 75px
+
+.overview-opret
+  margin-left 5px
 
 time
   float right
@@ -239,7 +242,6 @@ article.post
 
   h2
     margin 0 0 0 20px
-    font-weight normal
     margin-left 65px
     
   .author-info
@@ -287,6 +289,18 @@ article.post
       margin-bottom 5px
     a
       margin-bottom 5px
+
+.brevkasse-topics
+  .topic
+    width 257px
+    display inline-block
+    margin-bottom 60px
+    vertical-align top
+    &:nth-child(odd)
+      margin 0 21px 0 75px
+
+    p
+      margin-bottom 1em
 
 footer
     width 100%

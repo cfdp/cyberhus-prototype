@@ -1,0 +1,56 @@
+!!! 5
+html
+	head
+		title Cyberhus
+		script(src="js/jquery.min.js")
+	body
+		header
+			nav
+				a(href="index").logo
+				#menu
+					ul
+						li
+							a(href="secret") Chat
+						li
+							a(href="brevkasse") Brevkasse
+						li
+							a(href="livsfortaellinger_overview") Debat
+						li
+							a(href="fortaellinger") Fortællinger
+						li
+							a(href="galleri") Kunstgalleri
+						li
+							a(href="blog") Blogs
+		#wrapper
+			section#sidebar
+			#content-wrapper
+				.breadcrumb
+					a(href="index") Fortællinger
+
+				#icon
+				h1 Livsfortællinger
+				p.overview-summary.
+					Her kan du skrive din historie og læse andres. Glæde, vrede, angst, tristhed, håb - alle følelser er velkomne her. Det handler om at få sat ord på tankerne, og lade andre kigge med.
+				br
+				a.btn.overview-btn(href="livsfortaellinger_overview") Se Livsfortællinger
+				a.btn.overview-opret(href="") +
+
+				br
+				br
+				br
+
+				#icon
+				h1 Kropshemmeligheder
+				p.overview-summary.
+					Skriv din kropshemmelighed her - og se den blive forvandlet til skønlitteratur af to professionelle forfattere.
+					Måske ligner din navle statsministeren. Eller også har du som pige hår på brystvorterne. Eller måske kan du ikke tisse,
+					før du har sunget ABC'en for dig selv. Eller har du en stomi-pose under trøje uden din venner ved det?
+					Vi går alle sammen og gemmer på hemmeligheder om vores kroppe.
+				br
+				a.btn.overview-btn(href="secret") Se Kropshemmeligheder
+				a.btn.overview-opret(href="") +
+
+		footer
+			img(src="img/footer_images.png" alt="by" width="100%")
+
+		script(src="js/expand.js")	
