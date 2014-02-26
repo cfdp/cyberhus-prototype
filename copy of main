@@ -87,8 +87,6 @@ header
         a
           color #FFF
           font-weight 100
-
-
           font-size 18px
           text-shadow 1px 1px #888
           padding 23px 20px
@@ -96,7 +94,7 @@ header
           &:hover
             background nav_hover
             text-decoration none
-            
+
 #wrapper
   max-width 960px
   margin auto
@@ -113,8 +111,8 @@ header
   width 280px
   height 800px
   float right
-  margin-top 70px
-  background #eee
+  margin-top 30px
+  background header_bg
 
 .overview-summary
   margin-left 75px
