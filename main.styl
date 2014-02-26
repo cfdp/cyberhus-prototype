@@ -59,10 +59,13 @@ a
     text-decoration underline
 
 header
-  position fixed
   width 100%
   background header_bg
   border-bottom 2px solid nav_hover
+
+  @media screen and (max-width: 960px)
+    padding-left 20px
+
   .logo
     margin-top 10px
     width 164px
@@ -74,8 +77,12 @@ header
       max-width 300px
 
   nav
-    width 960px
+    max-width 960px
     margin auto
+    
+    @media screen and (max-width: 960px)
+      padding-right 20px
+  
   #menu
     float right
     ul
@@ -105,6 +112,8 @@ header
 #content-wrapper
   max-width 610px
   padding-top 20px
+  @media screen and (max-width: 960px)
+    margin 0 auto
 
 .breadcrumb
   font-size 14px
@@ -115,6 +124,8 @@ header
   float right
   margin-top 70px
   background #eee
+  @media screen and (max-width: 960px)
+    display none
 
 .overview-summary
   margin-left 75px
