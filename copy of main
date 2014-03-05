@@ -22,8 +22,8 @@
 @import url("reset.css")
 
 text = #222
-bg = #ffffff
-header_bg = #cab2a1
+bg = url("img/paddern-bg.png")
+header_bg = url("img/pattern.png")
 nav_hover = #b78362
 links = #1683B8
 post_info = #888
@@ -42,13 +42,22 @@ body
   background bg
 
 h1
-  font-size 24px
-  margin 20px 0 10px 0
+  font-size 22px
+  margin 10px 0 12px 0
   font-weight 300
   line-height 1.3em
+  color #a98168
 
 h2
-  margin 20px 0 10px 0
+  font-size 18px
+  margin 20px 0 10px 0 
+
+h3
+  font-size 16px
+
+.post
+  h3  
+    margin-left 65px
 
 a
   color links
@@ -59,63 +68,85 @@ a
     text-decoration underline
 
 header
-  position fixed
   width 100%
   background header_bg
-  border-bottom 2px solid nav_hover
-  .logo
-    margin-top 10px
-    width 164px
-    height 50px
-    background url("img/logo.png")
-    background-size cover
-    display inline-block
-    img
-      max-width 300px
-
-  nav
-    width 960px
+  padding 2px 0 
+  #header
+    max-width 960px
     margin auto
-  #menu
-    float right
-    ul
-      li
-        margin-top 22px
-        float left
-        &:first-child
-          border 0
-        a
-          color #FFF
-          font-weight 100
-          font-size 18px
-          text-shadow 1px 1px #888
-          padding 23px 20px
-          //border-left 1px solid lighten(nav_hover, 25%)
-          &:hover
-            background nav_hover
-            text-decoration none
+    .logo
+      width 172px
+      height 41px
+      background url("img/logo_no_text.png")
+      background-size cover
+      display inline-block
+      img
+        max-width 300px
+ 
+    nav
+      float right
+      margin-top 10px
+      @media screen and (max-width: 825px)
+        display none
+      ul
+        li
+          float left
+          border-left 1px solid #a88067
+          &:first-child
+            border 0
+          a
+            color text
+            font-size 17px
+            padding 0 20px 15px 20px
+            
+            &:hover
+              border-bottom 2px solid #fffbf8
+              color #fffbf8
+              text-shadow 1px 1px #888
+              text-decoration none
 
+  // .toggle_menu
+  //   display none
+  //   margin-top 20px
+  //   margin-right 20px
+  //   @media screen and (max-width: 825px)
+  //     display inline-block
+  //     float right
+  //     a
+  //       color #fff
+  //       font-size 22px
+  //       text-decoration none
+            
 #wrapper
   max-width 960px
   margin auto
-  padding 60px 20px 20px 20px
+  padding 5px 20px
 
 #content-wrapper
   max-width 610px
-  padding-top 20px
+  @media screen and (max-width: 960px)
+    margin 0 auto
 
 .breadcrumb
   font-size 14px
+  margin-bottom 35px
 
 #sidebar
-  width 280px
-  height 800px
+  width 240px
+  height 460px
+  padding 20px
   float right
-  margin-top 30px
-  background header_bg
+  margin-top 62px
+  background #eee
+  @media screen and (max-width: 960px)
+    display none
 
 .overview-summary
   margin-left 75px
+
+.brevkasse-summary
+  padding-bottom 20px
+  border-bottom 1px solid post_info
 
 #icon
   width 65px
@@ -132,22 +163,16 @@ header
   margin-right: 10px
 
 .btn
-  padding 5px 10px
+  padding 8px 10px
   color btn_text
   background btn_bg
+  border-radius 3px
+
   &:hover 
     background btn_hover
     text-decoration none
-
-.author
-  margin-top 10px
-  margin-bottom 0
   
-.author-info
-  margin-top 1px
-  color post_info
-
-#overview-opret
+.overview-btn
   margin-left 75px
 
 time
@@ -179,32 +204,38 @@ article
     border-left 1px solid #cdcdcd
     padding 8px 0 8px 10px
 
-.komm-author
-  font-weight 500
 
 .komm-komm
   margin-top 5px
 
 .komm-arrow
-  width 10px
-  height 6px
-  background url("img/arrow_komm.png")
-  background-size cover
   display inline-block
-  margin 0 6px
+  margin-left 5px
+  
+  &:after
+    /*Add another block-level blank space*/
+    content ''
+    display block
+ 
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width 8px
+    height 8px
+ 
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border solid #888
+    border-width 0 2px 2px 0
 
-.se-komm
-  cursor pointer
-  color links
-  &:hover
-    text-decoration underline
+    -webkit-transform rotate(45deg)
+    -moz-transform rotate(45deg)
+    -ms-transform rotate(45deg)
+    -o-transform rotate(45deg)
+    transform rotate(45deg)
 
 #galleri-img
   text-align center
 
 img
   margin auto
-  margin-top 10px
 
 form
   *
@@ -237,7 +268,6 @@ article.post
 
   h2
     margin 0 0 0 20px
-    font-weight normal
     margin-left 65px
     
   .author-info
@@ -285,6 +315,18 @@ article.post
       margin-bottom 5px
     a
       margin-bottom 5px
+
+.brevkasse-topics
+  .topic
+    width 257px
+    display inline-block
+    margin-bottom 60px
+    vertical-align top
+    &:nth-child(odd)
+      margin 0 21px 0 75px
+
+    p
+      margin-bottom 1em
 
 footer
     width 100%

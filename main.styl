@@ -22,6 +22,7 @@
 @import url("reset.css")
 
 text = #222
+headers = #a98168
 bg = url("img/paddern-bg.png")
 header_bg = url("img/pattern.png")
 nav_hover = #b78362
@@ -30,7 +31,7 @@ post_info = #888
 btn_text = #ffffff
 btn_bg = #f1975c
 btn_hover = darken(btn_bg, 10%)
-post_bg = #eeeeee
+post_bg = #ffffff
 footer = #2B2526
 
 body
@@ -46,18 +47,15 @@ h1
   margin 10px 0 12px 0
   font-weight 300
   line-height 1.3em
-  color #a98168
+  color headers
 
 h2
   font-size 18px
   margin 20px 0 10px 0 
+  color headers
 
 h3
   font-size 16px
-
-.post
-  h3  
-    margin-left 65px
 
 a
   color links
@@ -69,33 +67,20 @@ a
 
 header
   width 100%
-  height 80px
   background header_bg
-
+  padding 8px 0 2px 0
   #header
-    width 960px
+    max-width 960px
     margin auto
     .logo
       width 172px
       height 41px
-      margin-top -10px
       background url("img/logo_no_text.png")
       background-size cover
       display inline-block
       img
         max-width 300px
-
-    #social
-      width 960px
-      height 30px
-      margin auto
-      #social_links
-        float right
-        width 80px
-        height 30px
-        a
-          margin-left 10px
-
+ 
     nav
       float right
       margin-top 10px
@@ -107,16 +92,35 @@ header
           border-left 1px solid #a88067
           &:first-child
             border 0
+          &:hover
+            ul
+              display block
           a
             color text
             font-size 17px
-            padding 0 20px 15px 20px
-            
+            padding 0 20px 14px 20px         
             &:hover
-              border-bottom 2px solid #fffbf8
+              border-bottom 3px solid #fffbf8
               color #fffbf8
               text-shadow 1px 1px #888
               text-decoration none
+          ul
+            position absolute
+            margin-top 15px
+            display none
+            li
+              clear both
+              display block            
+              border 0
+              width 200px
+              background header_bg
+              padding 5px 0 10px 0
+              a
+                padding 0 14px 9px 20px
+                &:hover
+                  border-left 3px solid #fffbf8
+                  border-bottom 0
+                        
 
   // .toggle_menu
   //   display none
@@ -150,7 +154,6 @@ header
   padding 20px
   float right
   margin-top 62px
-  background #eee
   @media screen and (max-width: 960px)
     display none
 
@@ -221,14 +224,6 @@ article
 .komm-komm
   margin-top 5px
 
-// .komm-arrow
-//   width 10px
-//   height 6px
-//   background url("img/arrow_komm.png")
-//   background-size cover
-//   display inline-block
-//   margin 0 6px
-
 .komm-arrow
   display inline-block
   margin-left 5px
@@ -283,12 +278,17 @@ article.post
   padding 5px 10px
   margin-top 10px
   background post_bg
+  &:hover
+    cursor pointer
 
   p
     margin 0
 
   h2
     margin 0 0 0 20px
+    margin-left 65px
+
+  h3  
     margin-left 65px
     
   .author-info
@@ -304,9 +304,6 @@ article.post
     font-weight bold
     background url("img/arrow.png") no-repeat
     background-size contain
-    &:hover
-      text-decoration none
-      cursor pointer
 
   .rotate
     -webkit-transform rotate(90deg)
@@ -321,7 +318,7 @@ article.post
     padding 3px 12px
     background url("img/speech.png")
     background-repeat no-repeat
-    background-position-y 3px 
+    background-position-y 4px 
     background-position-x 1px 
 
   .post-date

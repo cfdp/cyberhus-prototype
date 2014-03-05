@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	$(".arrow").click(function(){
-		$(this).toggleClass("rotate");
-		$(this).siblings(".toggle-text").slideToggle("300");
+	$(".post").click(function(){
+		$(this).children(".arrow").toggleClass("rotate");
+		$(this).children(".toggle-text").slideToggle("300");
 	});
 
 	$(".komm-arrow").click(function(){
