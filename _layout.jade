@@ -1,6 +1,86 @@
-doctype
+!!! 5
 html
-  head
-    link(rel="stylesheet", href="/main.css")
-  body
-    != yield
+	head
+		title Cyberhus
+		link(rel="stylesheet", href="reset.css")
+		link(rel="stylesheet", href="main.css")
+		script(src="js/jquery.min.js")
+	body
+		header
+			.header
+				a(href="index").logo
+				nav
+					ul
+						li
+							a(href="kropshemmeligheder") Chat
+						li
+							a(href="brevkasse_topics") Brevkasse
+						li
+							a(href="debat_topics") Debat
+						li
+							a(href="fortaellinger") Fortællinger
+							ul
+								li 
+									a(href="livsfortaellinger_overview") Livsfortællingen
+								li 
+									a(href="kropshemmeligheder") Kropshemmeligheder
+						li
+							a(href="galleri") Kunstgalleri
+						li
+							a(href="blog_types") Blogs
+							ul
+								li 
+									a(href="blog_overview") Unge blogs
+								li 
+									a(href="blog_overview") Voksne blogs
+		.wrapper
+			section.sidebar
+				h2 Sidebar title
+				p.
+					This is sidebar text - 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
+					imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
+					Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
+					vehicula tortor ac, porta ipsum. 
+			!= yield
+		footer
+			.footer
+				.footer-top
+					.footer-column.footer-one
+						h1 Om Cyberhus
+						p.
+							Cyberhus er dit klubhus på nettet. Du kan skrive til en voksen og få rådgivning i vores brevkasser og chat,
+							dele dine tanker i ung-til-ung, lave billeder eller bare hænge ud. I Cyberhus kan du være dig selv og har
+							du brug for en voksen, vil vi gerne lytte og prøve at hjælpe.
+						p Cyberhus er en del af EU's Insafe- & Daphne program
+						.footer-icons
+							img(src="img/footer-eu.jpg")
+							img(src="img/footer-insafe.jpg")
+							img(src="img/footer-daphne.jpg")
+
+						p.copyright © Copyright 1998 - 2014 | Center for Digital Pædagogik
+					.footer-column.footer-two
+						h1 Andet
+						ul
+							li Artikler
+							li Kontakt
+							li For voksne
+							li Sikkerhed på Cyberhus
+							li Login
+						.social-icons
+							a(href="https://www.facebook.com/cyberhus" title="Cyberhus på Facebook").facebook
+							a(href="http://instagram.com/cyberhus" title="Cyberhus på Instagram").instagram
+					.footer-column.footer-three
+						h1 Ung I
+						ul
+							li Aarhus
+							li Esbjerg
+							li Frederiksberg
+							li Herning
+							li Kolding
+							li København
+							li Odense
+							li Silkeborg
+							li Viborg
+
+		script(src="js/expand.js")

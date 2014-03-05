@@ -23,7 +23,7 @@
 
 text = #222
 headers = #a98168
-bg = url("img/paddern-bg.png")
+bg = url("img/pattern-bg.png")
 header_bg = url("img/pattern.png")
 nav_hover = #b78362
 links = #1683B8
@@ -49,6 +49,9 @@ h1
   line-height 1.3em
   color headers
 
+.sec_header
+  margin-top 0
+
 h2
   font-size 18px
   margin 20px 0 10px 0 
@@ -69,13 +72,13 @@ header
   width 100%
   background header_bg
   padding 8px 0 2px 0
-  #header
+  .header
     max-width 960px
     margin auto
     .logo
       width 172px
       height 41px
-      background url("img/logo_no_text.png")
+      background url("img/logo.png")
       background-size cover
       display inline-block
       img
@@ -134,7 +137,7 @@ header
   //       font-size 22px
   //       text-decoration none
             
-#wrapper
+.wrapper
   max-width 960px
   margin auto
   padding 5px 20px
@@ -148,12 +151,13 @@ header
   font-size 14px
   margin-bottom 35px
 
-#sidebar
+.sidebar
   width 240px
   height 460px
-  padding 20px
+  padding 0 20px
   float right
-  margin-top 62px
+  margin-top 40px
+  background #ededed
   @media screen and (max-width: 960px)
     display none
 
@@ -170,7 +174,7 @@ header
   background url("img/icon.png")
   background-size 65px 65px
   float left
-  margin 20px 10px 0 0 
+  margin -18px 10px 0 0 
 
 .light-text
   color post_info
@@ -179,10 +183,11 @@ header
   margin-right: 10px
 
 .btn
-  padding 8px 10px
+  padding 4px 8px
   color btn_text
   background btn_bg
   border-radius 3px
+  font-size 16px
 
   &:hover 
     background btn_hover
@@ -260,17 +265,16 @@ form
   input
     width 120px
     height 30px
-    background post_bg
+    background #ededed
     padding-left 3px
     border none
-
 
   textarea
     width 100%
     max-width 350px
     height 120px
     resize none
-    background post_bg
+    background #ededed
     display block
     border none
 
@@ -347,9 +351,63 @@ article.post
       margin-bottom 1em
 
 footer
+  height 300px
+  margin-top 200px
+  background url("img/footer_images.png") no-repeat
+  position relative
+  bottom -20px
+  color btn_text
+
+  h1
+    color btn_text
+    margin-bottom 20px
+
+  p
+    margin-bottom 1em
+    text-align justify
+
+  .footer
+    position absolute
+    bottom -211px
     width 100%
-    height 200px
-    margin-top 100px
+    padding-top 20px
     background footer
-    img 
-      margin-top -180px
+
+    .footer-top
+      width 910px
+      margin 10px auto
+      .footer-column
+        display inline-block
+        vertical-align top
+        margin-left 40px
+        &:first-child
+          margin 0
+
+      .footer-one
+        width 560px
+        .footer-icons
+          img
+            width 46px
+            height 46px
+            border-radius 46px
+            margin-right 12px
+        .copyright 
+          margin-top 50px
+
+      .social-icons
+        margin-top 10px
+        .facebook
+          width: 46px;
+          height: 46px;
+          display: inline-block;
+          background url("img/facebook.png")
+          &:hover
+            background-position-y 46px
+        .instagram
+          width: 46px;
+          height: 46px;
+          display: inline-block;
+          margin-left 10px
+          background url("img/instagram.png")
+          &:hover
+            background-position-y 46px

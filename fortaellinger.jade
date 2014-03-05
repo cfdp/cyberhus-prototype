@@ -1,66 +1,24 @@
-!!! 5
-html
-	head
-		title Cyberhus
-		script(src="js/jquery.min.js")
-	body
-		header
-			#header
-				a(href="index").logo
-				nav
-					ul
-						li
-							a(href="secret") Chat
-						li
-							a(href="brevkasse") Brevkasse
-						li
-							a(href="livsfortaellinger_overview") Debat
-						li
-							a(href="fortaellinger") Fortællinger
-							ul
-								li 
-									a(href="livsfortaellinger_overview") Livsfortællingen
-								li 
-									a(href="secret") Kropshemmeligheder
-						li
-							a(href="galleri") Kunstgalleri
-						li
-							a(href="blog") Blogs
-		#wrapper
-			section#sidebar
-				h2 Sidebar title
-				p.
-					This is sidebar text - 
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi metus. Fusce
-					imperdiet non magna sit amet bibendum. Cras id convallis massa. Sed sed aliquam nibh, eu fringilla lectus.
-					Fusce rhoncus magna sit amet velit venenatis, sit amet tempus purus luctus. Sed a libero dapibus,
-					vehicula tortor ac, porta ipsum. 
-			#content-wrapper
-				.breadcrumb
-					a(href="index") Fortællinger
+#content-wrapper
+	.breadcrumb
+		a(href="index") Fortællinger
 
-				#icon
-				h1 Livsfortællinger
-				p.overview-summary.
-					Her kan du skrive din historie og læse andres. Glæde, vrede, angst, tristhed, håb - alle følelser er velkomne her. Det handler om at få sat ord på tankerne, og lade andre kigge med.
-				br
-				a.btn.overview-btn(href="livsfortaellinger_overview") Se Livsfortællinger
+	#icon
+	h1 Livsfortællinger
+	p.overview-summary.
+		Her kan du skrive din historie og læse andres. Glæde, vrede, angst, tristhed, håb - alle følelser er velkomne her. Det handler om at få sat ord på tankerne, og lade andre kigge med.
+	br
+	a.btn.overview-btn(href="livsfortaellinger_overview") Se Livsfortællinger
 
-				br
-				br
-				br
+	br
+	br
+	br
 
-				#icon
-				h1 Kropshemmeligheder
-				p.overview-summary.
-					Skriv din kropshemmelighed her - og se den blive forvandlet til skønlitteratur af to professionelle forfattere.
-					Måske ligner din navle statsministeren. Eller også har du som pige hår på brystvorterne. Eller måske kan du ikke tisse,
-					før du har sunget ABC'en for dig selv. Eller har du en stomi-pose under trøje uden din venner ved det?
-					Vi går alle sammen og gemmer på hemmeligheder om vores kroppe.
-				br
-				a.btn.overview-btn(href="secret") Se Kropshemmeligheder
-
-		footer
-			img(src="img/footer_images.png" alt="by" width="100%")
-
-		script(src="js/expand.js")	
+	#icon
+	h1.sec_header Kropshemmeligheder
+	p.overview-summary.
+		Skriv din kropshemmelighed her - og se den blive forvandlet til skønlitteratur af to professionelle forfattere.
+		Måske ligner din navle statsministeren. Eller også har du som pige hår på brystvorterne. Eller måske kan du ikke tisse,
+		før du har sunget ABC'en for dig selv. Eller har du en stomi-pose under trøje uden din venner ved det?
+		Vi går alle sammen og gemmer på hemmeligheder om vores kroppe.
+	br
+	a.btn.overview-btn(href="kropshemmeligheder") Se Kropshemmeligheder	
