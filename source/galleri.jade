@@ -1,0 +1,23 @@
+.wrapper 
+	!= partial("_sidebar")
+	#content-wrapper
+		.breadcrumb
+			a(href="index") Kunstgalleri > Min billeder
+
+		article
+			#galleri-img
+				img(src="img/kitten.jpg" alt="kitten" width="100%")
+							
+			p.light-text Emil den vilde - Dreng, 16 år 
+				time 20. okt 2013
+
+			h1 Mine billeder
+			p.
+				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+				Aenean lobortis erat sit amet bibendum porta. Nunc congue orci vitae posuere vulputate.
+				Vestibulum ullamcorper ipsum vel viverra facilisis. Integer molestie mauris sed enim dignissim,
+				convallis posuere leo blandit. Phasellus id sem tincidunt, ornare mauris at, hendrerit justo.
+				Donec ultricies, tortor ac porta tempus, tortor quam aliquet velit, et porttitor nisl dolor
+				fringilla magna.
+
+		!= partial("_comments")

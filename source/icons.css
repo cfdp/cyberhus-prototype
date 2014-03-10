@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'cyberhus';
+	src:url('fonts/cyberhus.eot?-uik2nb');
+	src:url('fonts/cyberhus.eot?#iefix-uik2nb') format('embedded-opentype'),
+		url('fonts/cyberhus.woff?-uik2nb') format('woff'),
+		url('fonts/cyberhus.ttf?-uik2nb') format('truetype'),
+		url('fonts/cyberhus.svg?-uik2nb#cyberhus') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'cyberhus';
+	color: #fff;
+	padding: 20px;
+	background: #f1975c;
+	border-radius: 50%;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 28px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-photo:before {
+	content: "\e600";
+}
+.icon-bubble:before {
+	content: "\e601";
+}
+.icon-camera:before {
+	content: "\e602";
+}
+.icon-pen:before {
+	content: "\e603";
+}
+.icon-mail:before {
+	content: "\e604";
+}
+.icon-megaphone:before {
+	content: "\e605";
+}
+.icon-note:before {
+	content: "\e606";
+}
