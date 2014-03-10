@@ -147,6 +147,49 @@ header
   @media screen and (max-width: 960px)
     margin 0 auto
 
+.chatBar
+  width 100%
+  height 50px
+  padding-top 30px
+  background #39a652
+  color #fff
+  font-size 20px
+  text-align center
+
+.card-wrapper
+  padding-top 60px
+  .card
+    display inline-block
+    width 280px 
+    height 145px
+    padding 10px
+    background #ddd
+    margin 0 10px 60px 0
+    vertical-align top
+    font-size 14px
+    line-height 1.4em
+    .icon
+      width 60px 
+      height 60px
+      position relative
+      top -180px
+      left 110px
+      background url("img/icon.png")
+      background-size cover
+    .date
+      float right
+    p
+      margin-bottom 1em
+    .button
+      width 100%
+      text-align center
+    .btn
+      background none
+      padding 0
+      color links
+      &:hover
+        text-decoration underline
+
 .breadcrumb
   font-size 14px
   margin-bottom 35px
@@ -317,16 +360,19 @@ article.post
     transform rotate(90deg)
 
   .post-komm
+    font-size 14px
+    color post_info
     float right
     margin -37px 35% 0 0
     padding 3px 12px
-    background url("img/speech.png")
+    background url("img/speech2.png")
     background-repeat no-repeat
-    background-position-y 4px 
+    background-position-y 2px 
     background-position-x 1px 
 
   .post-date
     float right
+    color post_info
     margin -34px 5% 0 0
 
   .toggle-text
@@ -352,7 +398,7 @@ article.post
 
 footer
   height 300px
-  margin-top 200px
+  margin-top 60px
   background url("img/footer_images.png") no-repeat
   position relative
   bottom -20px
@@ -411,3 +457,109 @@ footer
           background url("img/instagram.png")
           &:hover
             background-position-y 46px
+
+/* Responsive slider */
+.rslides
+  position relative
+  list-style none
+  overflow hidden
+  width 100%
+  padding 0
+  margin 0
+
+.rslides
+  li
+    -webkit-backface-visibility hidden
+    position absolute
+    display none
+    width 100%
+    left 0
+    top 0
+
+.rslides
+  li
+    &:first-child
+      position relative
+      display block
+      float left
+
+.rslides
+  img
+    display block
+    height auto
+    float left
+    width 100%
+    border 0
+
+
+
+/* ------------------------------------------------------------*/
+
+.callbacks_container
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+
+.callbacks
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+.callbacks
+  li
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+.callbacks
+  img
+    display: block;
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    border: 0;
+
+.callbacks .caption
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(0,0,0, .8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+
+.callbacks_nav
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 52%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("img/slideArrows.gif") no-repeat left top;
+  margin-top: -45px;
+
+.callbacks_nav:active 
+  opacity: 1.0;
+
+.callbacks_nav.next
+  left: auto;
+  background-position: right top;
+  right: 0;
