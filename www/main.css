@@ -9,6 +9,8 @@ h2{font-size:18px;margin:20px 0 10px 0;color:#a98168}
 h3{font-size:16px}
 a{color:#1683b8;text-decoration:none;}
 a:hover{cursor:pointer;text-decoration:underline}
+.dev{position:absolute;z-index:9999;}
+.dev img{width:80%}
 header{width:100%;background:url("img/pattern.png");padding:8px 0 2px 0;}
 header .header{max-width:960px;margin:auto;}
 header .header .logo{width:172px;height:41px;background:url("img/logo.png");background-size:cover;display:inline-block;}
