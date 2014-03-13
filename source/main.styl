@@ -152,8 +152,15 @@ header
       font-size 40px
       color #ddd
 
+.card-content
+  @media screen and (max-width: 1015px)
+    width 690px
+    margin auto
+  @media screen and (max-width: 680px)
+    width 390px
+
 .kategorier
-  padding 60px 0 80px
+  padding-top 40px
   h1
     text-align center
     margin-bottom 20px
@@ -237,7 +244,7 @@ table
 .overview-summary
   margin-top 35px
 
-.brevkasse-summary
+.topic-summary
   padding-bottom 20px
   border-bottom 1px solid post_info
   margin-bottom 20px
@@ -414,25 +421,27 @@ img
         margin-bottom 5px
 
 .topics
-  .card
-    width 258px
-    height 160px  
-    margin 10px 20px
-    font-size 16px
-    p
-      height 95px
-    .hover-box
-      width
-  .topic
-    width 295px
-    display inline-block
-    margin-bottom 60px
-    vertical-align top
-    &:nth-child(even)
-      margin-left 20px
+  .card-wrapper
+    margin 0
+    .card
+      width 258px
+      height 160px  
+      margin 10px 20px
+      font-size 16px
+      p
+        height 95px
+      .hover-box
+        width
+    .topic
+      width 295px
+      display inline-block
+      margin-bottom 60px
+      vertical-align top
+      &:nth-child(even)
+        margin-left 20px
 
-    p
-      margin-bottom 1em
+      p
+        margin-bottom 1em
 
 footer
   height 300px
