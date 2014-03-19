@@ -168,7 +168,48 @@
 		</div>
 	</div>
 	
-	<?php //echo footer(); ?> 
+	<footer>
+		<div class="footer">
+			<div class="footer-top">
+				<div class="footer-column footer-one">
+					<h1>Om Cyberhus</h1>
+					<p>
+						Cyberhus er dit klubhus på nettet. Du kan skrive til en voksen og få rådgivning i vores brevkasser og chat,
+						dele dine tanker i ung-til-ung, lave billeder eller bare hænge ud. I Cyberhus kan du være dig selv og har
+						du brug for en voksen, vil vi gerne lytte og prøve at hjælpe.
+					</p>
+					<p>Cyberhus er en del af EUs Insafe- & Daphne program</p>
+					<div class="footer-icons"><img src="img/footer-eu.jpg"/><img src="img/footer-insafe.jpg"/><img src="img/footer-daphne.jpg"/></div>
+					<p class="copyright">© Copyright 1998 - 2014 | Center for Digital Pædagogik</p>
+				</div>
+				<div class="footer-column footer-two">
+					<h1>Andet</h1>
+					<ul>
+						<li>Artikler</li>
+						<li>Kontakt</li>
+						<li>For voksne</li>
+						<li>Sikkerhed på Cyberhus</li>
+						<li>Login</li>
+					</ul>
+					<div class="social-icons"><a href="https://www.facebook.com/cyberhus" title="Cyberhus på Facebook" class="facebook"></a><a href="http://instagram.com/cyberhus" title="Cyberhus på Instagram" class="instagram"></a></div>
+				</div>
+				<div class="footer-column footer-three">
+					<h1>Ung I</h1>
+					<ul>
+						<li>Aarhus</li>
+						<li>Esbjerg</li>
+						<li>Frederiksberg</li>
+						<li>Herning</li>
+						<li>Kolding</li>
+						<li>København</li>
+						<li>Odense</li>
+						<li>Silkeborg</li>
+						<li>Viborg</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="js/expand.js"></script>
 </body>
 </html>
