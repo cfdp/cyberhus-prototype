@@ -80,7 +80,7 @@
 		</section>
 	</div>
 	
-	<?php //echo footer(); ?> 
+	<?php echo footer(); ?> 
 	<script src="js/expand.js"></script>
 </body>
 </html>

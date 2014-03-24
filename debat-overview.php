@@ -18,7 +18,7 @@
 			<div id="icon"></div>
 			<h1>Teenageliv</h1>
 			<p class="overview-summary">Del dine oplevelser og meninger om teenage-livets op- og nedture.</p><a href="" class="btn">Opret Debat</a>
-			<div class="overview"><a href="debat">
+			<div class="overview"><a href="debat.php">
 				<article class="post">
 					<h2>Svedproblemer</h2><span class="author-info">Dreng, 16 år</span><span class="post-komm">6</span><span class="post-date">20. okt 2013</span>
 					<p>
@@ -96,7 +96,7 @@
 			</div>
 		</div>
 
-		<?php //echo footer(); ?> 
+		<?php echo footer(); ?> 
 		<script src="js/expand.js"></script>
 	</body>
 	</html>
